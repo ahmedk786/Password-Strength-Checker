@@ -1,0 +1,84 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Full-page container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper for the input and button */
+.input-type {
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+/* Password input styling */
+.input-type input {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px 0 20px; /* Padding right for the button */
+    font-size: 16px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    outline: none;
+    background: transparent;
+    color: red;
+}
+
+/* Placeholder color */
+.input-type input::placeholder {
+    color: gray;
+}
+
+/* Submit button (positioned over input) */
+.input-type button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Image inside the button */
+.input-type button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Strength message */
+#message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+}
+
+/* Strength level colors */
+.weak {
+    color: red;
+}
+
+.medium {
+    color: orange;
+}
+
+.strong {
+    color: green;
+}
